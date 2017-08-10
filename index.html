@@ -1,25 +1,51 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bitmaker | Week 12 Weather Application</title>
+  <meta name="description" content="A simple weather application that loads live weather data and places it into a well designed HTML and CSS page.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+  <!-- THINGS I NEED:
+    form: input text="text", button
+    temp: current, high, low (F and C)
+    img? logo?
+    city: Some output
+    current time
+    image for weather
+    lat/lon for a map
+    What other data is available????
+  -->
+
+  <h1 id="city" class="city">Toronto</h1>
+
+  <form id="dosearch" name="dosearch">
+    <label for="find">City:</label>
+    <input type="text" id="find" name="find" value="" placeholder="Type a city...">
+    <input type="button" id="search" name="search" value="Search">
+    <input type="radio" id="cel" name="unit" value="c" checked="checked"> <label for="cel">C</label>
+    <input type="radio" id="far" name="unit" value="f"> <label for="far">F</label>
+  </form>
+
+  <ul>
+    <li id="curr" class="temp">22&deg;C</li>
+    <li id="high" class="temp">28&deg;C</li>
+    <li id="low" class="temp">20&deg;C</li>
+  </ul>
 
 
-
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="js/current.js"></script>
-        <!--<script src="js/forecast.js"></script>-->
-    </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/current.js"></script>
+</body>
 </html>

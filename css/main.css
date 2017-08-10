@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgb(200, 100, 73);
+  color: #fff;
+  font-family: 'Alfa Slab One', Impact, sans-serif;
+  font-size: 1em;
+}
+
+.city {
+  /* em for font-size, uses inherited
+     em for everyone else, uses current */
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0.25em 0;
+}
