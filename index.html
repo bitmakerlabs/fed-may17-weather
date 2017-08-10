@@ -28,9 +28,9 @@
     What other data is available????
   -->
 
-  <h1 id="city" class="city">Toronto</h1>
+  <h1 id="city" class="city"></h1>
 
-  <form id="dosearch" name="dosearch">
+  <form id="dosearch" name="dosearch" class="dosearch">
     <label for="find">City:</label>
     <input type="text" id="find" name="find" value="" placeholder="Type a city...">
     <input type="button" id="search" name="search" value="Search">
@@ -38,10 +38,14 @@
     <input type="radio" id="far" name="unit" value="f"> <label for="far">F</label>
   </form>
 
-  <ul>
-    <li id="curr" class="temp">22&deg;C</li>
-    <li id="high" class="temp">28&deg;C</li>
-    <li id="low" class="temp">20&deg;C</li>
+  <ul class="middle">
+    <div class="col">
+      <li id="curr" class="temp big"></li>
+    </div>
+    <div class="col">
+      <li id="high" class="temp small"></li>
+      <li id="low" class="temp small"></li>
+    </div>
   </ul>
 
 

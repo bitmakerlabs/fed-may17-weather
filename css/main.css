@@ -8,6 +8,7 @@ body {
   color: #fff;
   font-family: 'Alfa Slab One', Impact, sans-serif;
   font-size: 1em;
+  transition: background-color 300ms;
 }
 
 .city {
@@ -18,3 +19,48 @@ body {
   text-transform: uppercase;
   margin: 0.25em 0;
 }
+
+
+.dosearch {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0.75em 0;
+}
+  input:focus {
+    outline: 1px solid yellow;
+  }
+
+.col {
+  display: inline-block;
+}
+
+.middle {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4em;
+}
+  .big {
+    font-size: 4em;
+  }
+  .small {
+    font-size: 2em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/**/
